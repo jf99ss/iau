@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>صفحة التسجيل</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            direction: rtl;
+            margin: 0;
+            padding: 0;
+            background-image: url("img0.png"); /* رابط الصورة الخلفية */
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        form {
+            background-color: rgba(255, 255, 255, 0.8); /* خلفية شفافة للون الفاتح */
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 400px;
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        label {
+            font-size: 16px;
+            color: #333;
+            display: block;
+            margin: 10px 0 5px;
+        }
+
+        input {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-size: 14px;
+            box-sizing: border-box;
+            transition: border-color 0.3s;
+        }
+
+        input:focus {
+            border-color: #007BFF;
+            outline: none;
+        }
+
+        ul {
+            color: red;
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            font-size: 12px;
+        }
+
+        button {
+            width: 100%;
+            background-color: #007BFF;
+            color: white;
+            padding: 12px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        @media (max-width: 480px) {
+            form {
+                padding: 20px;
+            }
+
+            button {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <form id="registerForm">
+        <h2>تسجيل حساب جديد</h2>
+
+        <label for="username">اسم المستخدم:</label>
+        <input type="text" id="username" name="username" required>
+        <ul id="username-errors"></ul>
+
+        <label for="email">البريد الإلكتروني:</label>
+        <input type="email" id="email" name="email" required>
+        <ul id="email-errors"></ul>
+
+        <label for="password">كلمة المرور:</label>
+        <input type="password" id="password" name="password" required>
+        <ul id="password-errors"></ul>
+
+        <button type="submit">تسجيل</button>
+    </form>
+
+    <script>
+        document.getElementById("registerForm").addEventListener("submit", function(event) {
+            event.preventDefault(); // منع إرسال النموذج
+
+            const username = document.getElementById("username").value.trim();
+            const email = document.getElementById("email").value.trim();
+            const password = document.getElementById("password").value.trim();
+
+            const usernameErrors = document.getElementById("username-errors");
+            const emailErrors = document.getElementById("email-errors");
+            const passwordErrors = document.getElementById("password-errors");
+
+            usernameErrors.innerHTML = "";
+            emailErrors.innerHTML = "";
+            passwordErrors.innerHTML = "";
+
+            let isValid = true;
+
+            // التحقق من صحة اسم المستخدم
+            if (username.length <= 1) {
+                const li = document.createElement("li");
+                li.textContent = "اسم المستخدم يجب أن يكون أكثر من حرف واحد.";
+                usernameErrors.appendChild(li);
+                isValid = false;
+            }
+            if (username.length > 16) {
+                const li = document.createElement("li");
+                li.textContent = "اسم المستخدم يجب أن يكون أقل من 16 حرفًا.";
+                usernameErrors.appendChild(li);
+                isValid = false;
+            }
+
+            // التحقق من صحة البريد الإلكتروني
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(email)) {
+                const li = document.createElement("li");
+                li.textContent = "يرجى إدخال بريد إلكتروني صحيح.";
+                emailErrors.appendChild(li);
+                isValid = false;
+            }
+
+            // التحقق من صحة كلمة المرور
+            if (password.length <= 1) {
+                const li = document.createElement("li");
+                li.textContent = "كلمة المرور يجب أن تكون أكثر من حرف واحد.";
+                passwordErrors.appendChild(li);
+                isValid = false;
+            }
+            if (password.length > 16) {
+                const li = document.createElement("li");
+                li.textContent = "كلمة المرور يجب أن تكون أقل من 16 حرفًا.";
+                passwordErrors.appendChild(li);
+                isValid = false;
+            }
+
+            // إذا كانت البيانات صحيحة
+            if (isValid) {
+                alert("تم التسجيل بنجاح!");
+                // الانتقال إلى الصفحة الثانية
+                window.location.href = "p1.html"; // اسم الصفحة الثانية
+            }
+        });
+    </script>
+</body>
+</html>

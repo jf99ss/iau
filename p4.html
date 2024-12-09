@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Available Fields</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: url("img0.png"); /* Background image */
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+            direction: ltr;
+            min-height: 100vh;
+        }
+
+        /* Navigation bar */
+        nav {
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 10px 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex; /* Horizontal arrangement */
+            justify-content: center; /* Centering elements */
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin: 0 15px; /* Spacing between links */
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 5px 15px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #0dcaf0;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 5px;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            color: #0dcaf0;
+            text-align: center;
+        }
+
+        .fields-list {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .field-item {
+            background: rgba(0, 0, 0, 0.7);
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease;
+        }
+
+        .field-item:hover {
+            transform: scale(1.05);
+        }
+
+        .field-item img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+
+        .field-item h3 {
+            margin: 15px 0 10px;
+            font-size: 22px;
+            color: #0dcaf0;
+        }
+
+        .field-item p {
+            font-size: 16px;
+            color: #ccc;
+            line-height: 1.6;
+        }
+
+        .persons {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 10px;
+        }
+
+        .person {
+            text-align: center;
+            font-size: 14px;
+            color: #ccc;
+            flex: 1;
+        }
+
+        .person img {
+            width: 100%;
+            max-width: 300px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation bar -->
+    <nav>
+        <ul>
+            <li><a href="p2.html">Home</a></li>
+            <li><a href="p3.html">Arabic</a></li>
+            <li><a href="p6.html">Partnerships</a></li>
+            <li><a href="p7.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h1>Fields</h1>
+        <div class="fields-list">
+            <!-- Content Creation -->
+            <div class="field-item">
+                <h3>Content Creation</h3>
+                <p>Creating videos, streams, and other content for social media platforms.</p>
+                <div class="persons">
+                    <div class="person">
+                        <img src="img5.png" alt="Bandrita">
+                        <p>Bandar, is one of the top content creators in saudi arabia.</p>
+                    </div>
+                    <div class="person">
+                        <img src="img6.png" alt="Saudi Gamer">
+                        <p>Saudi Gamer is one of the biggest gaming channels.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Professional Gaming -->
+            <div class="field-item">
+                <h3>Professional Gaming</h3>
+                <p>Competing in major tournaments and winning international prizes.</p>
+                <div class="persons">
+                    <div class="person">
+                        <img src="img7.png" alt="KSAA">
+                        <p>The tank of the Saudi national team.</p>
+                    </div>
+                    <div class="person">
+                        <img src="img8.png" alt="trk">
+                        <p>Turki, one of the best Rocket League players globally.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Team Management -->
+            <div class="field-item">
+                <h3>Team Management</h3>
+                <p>Organizing tournaments and securing sponsorship contracts for the team.</p>
+                <div class="persons">
+                    <div class="person">
+                        <img src="img9.png" alt="Mosaad Al-Dossary">
+                        <p>Mosaad Al-Dossary, manager of Falcon Team.</p>
+                    </div>
+                    <div class="person">
+                        <img src="img10.png" alt="Mashhoor Al-Debian">
+                        <p>Mashhoor Al-Debian, former manager of the Saudi Gamer group.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Coaching -->
+            <div class="field-item">
+                <h3>Coaching</h3>
+                <p>The decision-maker and mastermind behind the team’s success.</p>
+                <div class="persons">
+                    <div class="person">
+                        <img src="img11.png" alt="Waleed">
+                        <p>Waleed, coach of the Saudi national team.</p>
+                    </div>
+                    <div class="person">
+                        <img src="img12.png" alt="Another Coach">
+                        <p>Dahoom, Falcon’s Rocket League coach.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

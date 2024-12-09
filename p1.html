@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الصفحة الرئيسية - الرياضات الإلكترونية في السعودية</title>
+    <style>
+        /* الأساسيات */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: radial-gradient(circle at center, #1a1a2e, #0f3460);
+            color: #f9f9f9;
+            direction: rtl; /* جعل النصوص تظهر من اليمين لليسار */
+        }
+
+        header {
+            background: linear-gradient(to right, #0f3460, #53354a);
+            color: #fff;
+            text-align: center;
+            padding: 20px 10px;
+            box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        h1, h2 {
+            margin: 10px 0;
+            font-size: 30px; /* زيادة حجم العناوين */
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #0f3460;
+            padding: 10px 0;
+        }
+
+        nav a {
+            color: #fff;
+            padding: 15px 20px;
+            text-decoration: none;
+            font-size: 16px;
+            text-align: center;
+        }
+
+        nav a:hover {
+            background-color: #53354a;
+            border-radius: 5px;
+        }
+
+        section {
+            padding: 20px;
+            margin: 20px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .content div {
+            flex: 1;
+            min-width: 250px;
+            padding: 15px;
+            background: rgba(0, 0, 0, 0.6);
+            border-radius: 10px;
+            transition: transform 0.3s, background 0.3s;
+        }
+
+        .content div:hover {
+            transform: translateY(-10px);
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        ul {
+            padding-right: 20px; /* تنسيق القوائم */
+            list-style: circle;
+            font-size: 18px; /* زيادة حجم الخط للقوائم */
+        }
+
+        a {
+            color: #00c3ff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            margin: 20px 0;
+            color: #fff;
+        }
+
+        /* تصميم مربع الأهداف */
+        .goals-box {
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .goals-box h3 {
+            font-size: 24px; /* زيادة حجم عنوان الأهداف */
+            color: #fff;
+            margin-bottom: 10px;
+        }
+
+        .goals-box ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .goals-box li {
+            font-size: 18px;
+            margin: 8px 0;
+            color: #00c3ff; /* تلوين النص باللون الأزرق النيون */
+        }
+
+        /* زر العودة للأعلى */
+        #backToTop {
+            position: fixed;
+            bottom: 20px;
+            left: 20px; /* تغيير الاتجاه للغة العربية */
+            background-color: #0f3460;
+            color: #fff;
+            padding: 10px 15px;
+            border-radius: 50%;
+            font-size: 20px;
+            border: none;
+            cursor: pointer;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s, background 0.3s;
+        }
+
+        #backToTop:hover {
+            transform: scale(1.1);
+            background-color: #53354a;
+        }
+
+        /* تنسيق الصور تحت بعض */
+        .images-section {
+            margin-top: 70px;
+        }
+
+        .images-section img {
+            width: 50%; /* لجعل الصورة تأخذ نصف العرض  */
+            height: auto;
+            margin-bottom: 70px; /* المسافة بين الصور */
+            border-radius: 20px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .images-section img:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>الرياضات الإلكترونية في السعودية</h1>
+</header>
+
+<!-- القائمة العلوية للتنقل بين الصفحات -->
+<nav>
+    <a href="p2.html">English</a>
+    <a href="p3.html">المجالات</a>
+    <a href="p5.html">الشراكات</a>
+    <a href="p7.html">تواصل معنا</a>
+</nav>
+
+<section>
+    <div class="content">
+        <!-- المحتوى العربي -->
+        <div>
+            <h2>عن الرياضات الإلكترونية</h2>
+            <p>
+                الرياضات الإلكترونية في المملكة العربية السعودية شهدت نموًا ملحوظًا في السنوات الأخيرة، 
+                حيث أصبحت المملكة مركزًا إقليميًا وعالميًا لهذه الرياضات. تأسس الاتحاد السعودي للرياضات الإلكترونية 
+                في عام 2017 بهدف رعاية وتطوير مجتمع الألعاب والصناعة المرتبطة بها في المملكة.
+            </p>
+
+            <!-- مربع الأهداف -->
+            <div class="goals-box">
+                <h3>أهداف الاتحاد السعودي للرياضات الإلكترونية</h3>
+                <ul>
+                    <li>تطوير صناعة الرياضات الإلكترونية في المملكة.</li>
+                    <li>تعزيز المشاركة في البطولات المحلية والدولية.</li>
+                    <li>دعم وتنمية المواهب الشابة في مجال الألعاب الإلكترونية.</li>
+                    <li>تعزيز الشراكات مع شركات عالمية لتطوير الرياضات الإلكترونية.</li>
+                    <li>الترويج للمملكة كمركز إقليمي للألعاب الإلكترونية.</li>
+                </ul>
+            </div>
+
+            <h2>إنجازات الاتحاد السعودي للرياضات الإلكترونية</h2>
+            <ul>
+                <li>تنظيم بطولات محلية وعالمية مثل "لاعبون بلا حدود" و"موسم الجيمرز".</li>
+                <li>استضافة أولمبياد الرياضات الإلكترونية 2025.</li>
+                <li>تأهيل الأندية السعودية للمنافسات العالمية مثل نادي النصر ونادي الاتحاد.</li>
+                <li>إطلاق الأكاديمية الوطنية للرياضات الإلكترونية.</li>
+                <li>تنظيم بطولة "كأس السعودية" للألعاب الإلكترونية بالتعاون مع مؤسسات دولية.</li>
+                <li>استضافة عدد من أكبر الأحداث العالمية مثل "بطولة FIFA 2024" و"PUBG Mobile World Championship".</li>
+                <li>دعم المواهب الناشئة في مجالات الرياضات الإلكترونية والفيديو جيمز من خلال برامج تدريبية ومنح.</li>
+                <li>تطوير شراكات استراتيجية مع شركات تكنولوجيا كبيرة مثل سوني ومايكروسوفت.</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- قسم الصور تحت بعض -->
+<section class="images-section">
+    <img src="img1.png" alt="صورة 1">
+    <img src="img2.png" alt="صورة 2">
+    <img src="img3.png" alt="صورة 3">
+    <img src="img4.png" alt="صورة 4">
+</section>
+
+<footer>
+    <p>© 2024 الاتحاد السعودي للرياضات الإلكترونية</p>
+</footer>
+
+<!-- زر العودة للأعلى -->
+<button id="backToTop" title="العودة للأعلى">↑</button>
+
+<script>
+    // زر العودة للأعلى
+    const backToTopButton = document.getElementById('backToTop');
+
+    // إظهار/إخفاء الزر بناءً على التمرير
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 300) {
+            backToTopButton.style.display = 'block';
+        } else {
+            backToTopButton.style.display = 'none';
+        }
+    });
+
+    // العودة للأعلى عند الضغط على الزر
+    backToTopButton.addEventListener('click', () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
+
+    // إخفاء الزر افتراضيًا
+    backToTopButton.style.display = 'none';
+</script>
+
+</body>
+</html>
